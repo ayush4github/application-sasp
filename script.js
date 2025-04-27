@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const response = await fetch("/submit-quiz", {
+        const response = await fetch(process.env.BACKEND_URL + "/submit-quiz", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ userResponses, discordId })
