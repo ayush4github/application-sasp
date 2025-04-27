@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!discordId || !applicantDetails || !declaration) {
             resultDisplay.textContent = "All fields and declaration are mandatory!";
-            resultDisplay.style.color = "red";
+            resultDisplay.className = "error";
             return;
         }
 
@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Ensure all questions are answered
-        const totalQuestions = 12;
+        const totalQuestions = 12; // Assuming 12 questions, adjust as needed
         if (Object.keys(userResponses).length < totalQuestions) {
             resultDisplay.textContent = "You must answer all questions!";
-            resultDisplay.style.color = "red";
+            resultDisplay.className = "error";
             return;
         }
 
-        const response = await fetch("http://localhost:5000/submit-quiz", {
+        const response = await fetch("/submit-quiz", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ userResponses, discordId })
@@ -37,6 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const result = await response.json();
         resultDisplay.textContent = `Result: ${result.result} (${result.correctCount}/12)`;
-        resultDisplay.style.color = result.result === "Pass" ? "green" : "red";
+        resultDisplay.className = result.result === "Pass" ? "pass" : "fail";
     });
 });
