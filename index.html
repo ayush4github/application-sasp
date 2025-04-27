@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <H1 align="center"><U><B>SASP Application Form</B></U></H1>
+    <form action="submit" method="POST">
+        <div class="note">
+        Note: Your Character's name, age, criminal records, backstory, experience, specialization, and aspirations will be checked and evaluated during the interview and can be rejected on this basis. So don't lie.
+        </div>
+        <h2><b><u>Information: </u></b></h2>
+        <labe for="discordid">Your Discord ID (example: 598326454425485313): </label>
+        <input type="text" id="discordid" name="discord_id"><br><br>
+        <label for="irl_name">Your IRL name: </label>
+        <input type="text" id="name" name="irl_name" required><br><br>
+
+        <label for="irl_age">Your IRL age: </label>
+        <input type="text" id="irl_age" name="irl_age" required><br><br>
+
+        <label for="character_name">Your Cop character's name: </label>
+        <input type="text" id="character_name" name="character_name" required><br><br>
+
+        <label for="character_age">Your Cop character's age:</label>
+        <input type="text" id="character_age" name="character_age" required><br><br>
+
+        <label for="backstory">Character Backstory:</label>
+        <textarea id="backstory" name="backstory" placeholder="Write your character's backstory here..." required></textarea><br><br>
+
+       
+        <label for="experience">Do you have any previous experience in Cop RP?</label>
+        <textarea id="experience" name="experience" placeholder="Share details here..."></textarea><br><br>
+
+        <label for="specialization">Do you have any specialized training/experience (SWAT, K9, etc.)?</label>
+        <textarea id="specialization" name="specialization" placeholder="Share details here..."></textarea><br><br>
+
+        <label for="why">Why do you want to serve in this department?</label>
+        <textarea id="why" name="why" placeholder="Share details here..."></textarea><br><br>
+
+        <div class="Situational Questions">
+            <h2><u><b> Situational questions (One or more options can be correct)</b></u></h2>
+        
+            <div class="q1">
+                <p>You pull over a vehicle for speeding, but the driver refuses to roll down their window. How do you handle the situation?</p>
+                <label><input type="checkbox" name="1" value="1a"> Politely ask them to lower the window and inform them of the legal requirement.</label><br>
+                <label><input type="checkbox" name="1" value="1b"> Call for backup immediately and treat it as a felony stop.</label><br>
+                <label><input type="checkbox" name="1" value="1c"> Knock on the window forcefully and demand compliance.</label><br>
+                <label><input type="checkbox" name="1" value="1d"> Ask them to display their ID against the window and proceed accordingly.</label><br>
+                <label><input type="checkbox" name="1" value="1e"> Ignore them and return to your vehicle since they refuse to cooperate.</label><br><br>
+            </div>
+        
+            <div class="q2">
+                <p>A high-ranking official asks you to “let someone go” after they were arrested. What is your response?</p>
+                <label><input type="checkbox" name="2" value="2a"> Inform them that all arrests follow due process and cannot be undone on request.</label><br>
+                <label><input type="checkbox" name="2" value="2b"> Release the suspect immediately to avoid problems with superiors.</label><br>
+                <label><input type="checkbox" name="2" value="2c"> Request written authorization and consider complying.</label><br>
+                <label><input type="checkbox" name="2" value="2d"> Direct them to follow legal procedures, such as bail or court intervention.</label><br>
+                <label><input type="checkbox" name="2" value="2e"> None of the above.</label><br><br>
+            </div>
+        
+            <div class="q3">
+                <p>You suspect a driver is intoxicated, but they refuse to take a breathalyzer test. What do you do?</p>
+                <label><input type="checkbox" name="3" value="3a"> Arrest them immediately for DUI without further checks.</label><br>
+                <label><input type="checkbox" name="3" value="3b"> Explain that refusal can lead to license suspension and request field sobriety tests.</label><br>
+                <label><input type="checkbox" name="3" value="3c"> Let them go since they refused the test.</label><br>
+                <label><input type="checkbox" name="3" value="3d"> Detain them and obtain a warrant for a blood test if necessary.</label><br>
+                <label><input type="checkbox" name="3" value="3e"> Confiscate their vehicle and leave them on foot.</label><br><br>
+            </div>
+        
+            <div class="q4">
+                <p>While conducting a routine traffic stop, the driver pulls out a gun. How do you react?</p>
+                <label><input type="checkbox" name="4" value="4a"> Immediately draw your firearm and take cover while giving verbal commands.</label><br>
+                <label><input type="checkbox" name="4" value="4b"> Attempt to grab the weapon from their hands before they can use it.</label><br>
+                <label><input type="checkbox" name="4" value="4c"> Fire your weapon immediately without assessing the threat level.</label><br>
+                <label><input type="checkbox" name="4" value="4d"> Retreat to cover, call for backup, and attempt to de-escalate if possible.</label><br>
+                <label><input type="checkbox" name="4" value="4e"> Walk away and report the incident later.</label><br><br>
+            </div>
+        
+            <div class="q5">
+                <p>A store clerk reports a robbery, but the suspect is nowhere to be found. How do you proceed?</p>
+                <label><input type="checkbox" name="5" value="5a"> Take the clerk’s statement and review security footage if available.</label><br>
+                <label><input type="checkbox" name="5" value="5b"> Assume it was a false alarm and clear the scene.</label><br>
+                <label><input type="checkbox" name="5" value="5c"> Put out an APB (All-Points Bulletin) and gather witness descriptions.</label><br>
+                <label><input type="checkbox" name="5" value="5d"> Search the entire area immediately without talking to the clerk.</label><br>
+                <label><input type="checkbox" name="5" value="5e"> None of the above.</label><br><br>
+            </div>
+        
+            <div class="q6">
+                <p>You find a suspect at the scene of a burglary. They claim they were just passing by. What steps do you take?</p>
+                <label><input type="checkbox" name="6" value="6a"> Detain them for questioning and check for evidence linking them to the crime.</label><br>
+                <label><input type="checkbox" name="6" value="6b"> Arrest them immediately because they are at the scene.</label><br>
+                <label><input type="checkbox" name="6" value="6c"> Let them go since they denied involvement.</label><br>
+                <label><input type="checkbox" name="6" value="6d"> Ask nearby witnesses if they saw anything suspicious before taking action.</label><br>
+                <label><input type="checkbox" name="6" value="6e"> Ignore the suspect and focus only on physical evidence.</label><br><br>
+            </div>
+        
+            <div class="q7">
+                <p>How do you identify a suspicious vehicle or person?</p>
+                <label><input type="checkbox" name="7" value="7a"> Look for behavior such as avoiding eye contact, loitering, or acting nervous.</label><br>
+                <label><input type="checkbox" name="7" value="7b"> Stop any person or vehicle that looks out of place.</label><br>
+                <label><input type="checkbox" name="7" value="7c"> Conduct random searches of vehicles in high-crime areas.</label><br>
+                <label><input type="checkbox" name="7" value="7d"> Check for repeated presence in an area known for criminal activity.</label><br>
+                <label><input type="checkbox" name="7" value="7e"> Follow any car that doesn’t seem familiar in the neighborhood.</label><br><br>
+            </div>
+        
+            <div class="q8">
+                <p>If multiple 911 calls come in at the same time, how do you prioritize your response?</p>
+                <label><input type="checkbox" name="8" value="8a"> Respond to the calls in the order they were received.</label><br>
+                <label><input type="checkbox" name="8" value="8b"> Prioritize based on threat level, such as life-threatening situations first.</label><br>
+                <label><input type="checkbox" name="8" value="8c"> Go to the closest call regardless of severity.</label><br>
+                <label><input type="checkbox" name="8" value="8d"> Handle the easiest call first to clear cases quickly.</label><br>
+                <label><input type="checkbox" name="8" value="8e"> Wait for dispatch to assign the calls without making a decision.</label><br><br>
+            </div>
+            <div class="q9">
+                <p>How do you decide whether to issue a citation, detain, or arrest someone?</p>
+                <label><input type="checkbox" name="9" value="9a"> Base it on the severity of the offense and legal guidelines.</label><br>
+                <label><input type="checkbox" name="9" value="9b"> Always arrest the person if they argue with you.</label><br>
+                <label><input type="checkbox" name="9" value="9c"> Issue a citation for any violation, regardless of circumstances.</label><br>
+                <label><input type="checkbox" name="9" value="9d"> Use discretion while considering the law and past behavior.</label><br>
+                <label><input type="checkbox" name="9" value="9e"> Let them go if they apologize sincerely.</label><br><br>
+            </div>
+            
+            <div class="q10">
+                <p>What steps do you take before using non-lethal force (e.g., taser, baton)?</p>
+                <label><input type="checkbox" name="10" value="10a"> Give verbal warnings and attempt to de-escalate first.</label><br>
+                <label><input type="checkbox" name="10" value="10b"> Use force immediately if the person refuses to cooperate.</label><br>
+                <label><input type="checkbox" name="10" value="10c"> Assess if the suspect is a threat before using non-lethal measures.</label><br>
+                <label><input type="checkbox" name="10" value="10d"> Use non-lethal force for any resistance, even minor.</label><br>
+                <label><input type="checkbox" name="10" value="10e"> None of the above.</label><br><br>
+            </div>
+            
+            <div class="q11">
+                <p>When is it justified to draw your firearm on a suspect?</p>
+                <label><input type="checkbox" name="11" value="11a"> When the suspect poses an immediate threat to life or safety.</label><br>
+                <label><input type="checkbox" name="11" value="11b"> During every felony traffic stop as a precaution.</label><br>
+                <label><input type="checkbox" name="11" value="11c"> If the suspect does not obey your commands quickly.</label><br>
+                <label><input type="checkbox" name="11" value="11d"> Only if the suspect is armed and actively shooting.</label><br>
+                <label><input type="checkbox" name="11" value="11e"> When a suspect attempts to flee and you want to stop them.</label><br><br>
+            </div>
+            
+            <div class="q12">
+                <p>How do you handle a situation where a civilian is uncooperative but not breaking the law?</p>
+                <label><input type="checkbox" name="12" value="12a"> Remain professional and attempt to de-escalate through communication.</label><br>
+                <label><input type="checkbox" name="12" value="12b"> Detain them for refusing to comply with your orders.</label><br>
+                <label><input type="checkbox" name="12" value="12c"> Issue a warning and tell them to leave the area.</label><br>
+                <label><input type="checkbox" name="12" value="12d"> Call for backup and have multiple officers confront them.</label><br>
+                <label><input type="checkbox" name="12" value="12e"> Document the interaction and leave if no law is being broken.</label><br><br>
+            </div>
+            <h2><b><u>Declarations</u></b></h2>
+        <label><input type="checkbox" id="declaraction1" required> I understand that corruption, abuse of power, or negligence will lead to immediate disciplinary action.</label><br><br>
+        <label><input type="checkbox" id="declaration2" required> I declare that my Cop Character does not have any misdemeanor or felony charge in its past records.</label><br><br>
+        <label><input type="checkbox" id="declaration3" required> I agree that I may be removed from the department if deemed appropriate by PD HC or the server staff for server health reasons.</label><br><br>
+        <button type="submit" class="submit-btn">Submit Application</button>             
+    </form>
+        </div>
+    </div>
+            <footer>
+                <div class="footer-container">
+                    <div class="logo">
+                        <img src="fm-logo.png" alt="FameCity Logo">
+                    </div>
+                    <div class="links">
+                        <a href="https://discord.gg/8QWX42t6" target="_blank">Join our discord</a>
+                        <a href="https://famecityrp.in/" target="_blank">Visit FameCity main website</a>
+                    </div>
+                    <p>&copy 2025 Fame City
+                    </div>
+            </footer>
+            <script src="script.js"></script>
+        </body>
+</html>
